@@ -1,0 +1,109 @@
+.page{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    min-height: 12vh;
+    background-color: blue;
+    float: left;
+    margin-bottom: 18px;
+}
+
+.middle{
+    width: 100%;
+    min-height: 70.5vh; 
+    float: left;  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 12vh;
+    background-color: blue;
+    float: left;
+}
+
+.nav{
+    width: 20%;
+    min-height: inherit;
+    background-color: lightblue;
+    float: left;
+}
+
+.section{
+    width: 55%;
+    min-height: inherit;
+    float: left;
+    background-color: gray;
+    margin: 0 2.5%;
+}
+
+.sidebar{
+    width: 20%;
+    min-height: inherit;
+    background-color: lightblue;
+    float: left;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-style{
+    color: white;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 992px) {
+    .header{
+        width: 100%;
+    }
+
+    .nav{
+        width: 30%;
+    }
+
+    .section{
+        width: 30%;
+    }
+
+    .sidebar{
+        width: 30%;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav{
+        width: 100%;
+        min-height: 24vh;
+        float: left;
+    }
+
+    .section{
+        width: 100%;
+        min-height: 24vh;
+        float: left;
+        margin: 15px 0;
+    }
+
+    .sidebar{
+        width: 100%;
+        min-height: 24vh;
+        float: left;
+    }
+}
